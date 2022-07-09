@@ -16,6 +16,7 @@
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -73,116 +74,42 @@
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet">
   </head>
-  <body>
-    
-<main>
+  <body class="bg-light">
+  <script src="js/jquery-3.6.0.js"></script>  
+
   <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">A Irmandade Alquímica</a>
+      <a class="navbar-brand" href="#">Múltiplo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel"></h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">O Início</a>
+              <a class="nav-link" href="#"></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mapa Mundi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Circulo Taumaturgico</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Criaturas e Oponentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                A Sociedade
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
-                <li><a class="dropdown-item" href="#">Geopolítica</a></li>
-                <li><a class="dropdown-item" href="#">Etinias</a></li>
-                <li><a class="dropdown-item" href="#">Hierarquia Social</a></li>
-                <li><a class="dropdown-item" href="#">Reinos</a></li>
-                <li><a class="dropdown-item" href="#">Religião</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Técnologia</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                A História
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
-                <li><a class="dropdown-item" href="#">1ª Era</a></li>
-                <li><a class="dropdown-item" href="#">2ª Era</a></li>
-                <li><a class="dropdown-item" href="#">3ª Era</a></li>
-                
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">4ª Era</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                As Facções
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
-                <li><a class="dropdown-item" href="#">Facção 1</a></li>
-                <li><a class="dropdown-item" href="#">Facção 2</a></li>
-                <li><a class="dropdown-item" href="#">Facção 3</a></li>
-                <li><a class="dropdown-item" href="#">Facção 4</a></li>
-                <li><a class="dropdown-item" href="#">Facção 5</a></li>
-                <li><a class="dropdown-item" href="#">Facção 6</a></li>
-                <li><a class="dropdown-item" href="#">Facção 7</a></li>
-                <li><a class="dropdown-item" href="#">Facção 8</a></li>
-                <li><a class="dropdown-item" href="#">Facção 9</a></li>
-                
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Fundadores</a></li>
-              </ul>
-            </li>
-          </ul>
-
+           
+            
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              O Jogo
+              Cadastros
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
               <li><a class="dropdown-item" href="view_Jogo.php">Jogo</a></li>
-              i><a class="dropdown-item" href="view_Cadastros.php">Cadastros</a></li>
-              <li><a class="dropdown-item" href="#">Regras</a></li>
-              <li><a class="dropdown-item" href="#">Tabuleiro</a></li>
-              <li><a class="dropdown-item" href="#">História</a></li>
-              <li><a class="dropdown-item" href="#">Capítulo</a></li>
-              <li><a class="dropdown-item" href="#">Magias</a></li>
-              <li><a class="dropdown-item" href="#">Grimório</a></li>
-              <li><a class="dropdown-item" href="#">Personagens</a></li>
-              <li><a class="dropdown-item" href="#">Itens</a></li>
+              
               
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Partida</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
             </ul>
           </li>
         </ul>
