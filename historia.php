@@ -73,7 +73,7 @@
                         <label for="">Descrição:</label><br>
                         <input id="editar_descricao" type="text" value="<?php echo $linha['Descricao']; ?>"><br>
                         <label for="">Cenário:</label><br>
-                        <select id="inserir_id_cenario">
+                        <select id="editar_id_cenario">
                             <?php
                                 $opcoes = $this -> listar_opcoes_cenario($linha['IDJogo']);
                             ?>
