@@ -1,14 +1,14 @@
 <?php
     include "conexao.php";
 
-    class Regra {
+    class Cenario {
         public function listar() {
             $conexao = new Conexao();
             $con = $conexao -> conectarBanco();
 
             mysqli_set_charset($con,'utf8');
 
-            $consulta = "SELECT * FROM Regra order by ID";
+            $consulta = "SELECT * FROM Cenario order by ID";
             $resultado = mysqli_query($con, $consulta) or die ("Falha na execução da consulta!");
 
             while($linha = mysqli_fetch_assoc($resultado))
@@ -16,7 +16,7 @@
                 $ID = $linha['ID'];
                 $Nome = $linha["Nome"];
                 $Descricao = $linha["Descricao"];
-                $Ativo = $linha["Ativo"] == 1 ? 'checked' : '';
+                $Ativo = ord($linha["Ativo"]) ? 'checked' : '';
                 $IDJogo = $this -> obter_nome_jogo($linha["IDJogo"]);
 
                 echo "<tr>";
@@ -37,7 +37,7 @@
 
             mysqli_set_charset($con,'utf8');
         
-            $consulta = "INSERT INTO Regra (Nome, Descricao, Ativo, IDJogo) VALUES ('$Nome', '$Descricao', $Ativo, $IDJogo)";
+            $consulta = "INSERT INTO Cenario (Nome, Descricao, Ativo, IDJogo) VALUES ('$Nome', '$Descricao', $Ativo, $IDJogo)";
             $resultado = mysqli_query($con, $consulta) or die ("Falha ao tentar adicionar dados!");
 
             echo "Dados adicionados com sucesso!";
@@ -45,14 +45,11 @@
 
         public function excluir($ID) {
             $conexao = new Conexao();
-            $con = $conexao-> conectarBanco();
+            $con = $conexao-> conectarBanco();    
+            $query = "DELETE FROM Cenario WHERE ID = $ID";
+            $resultado = mysqli_query($con, $query) or die('Falha ao tentar excluir registro!');
 
-            mysqli_set_charset($con,'utf8');
-
-            $consulta = "UPDATE Regra SET Ativo = 0 WHERE ID = $ID";
-            $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar desativado o registro!");
-
-            echo "Registro desativado com sucesso!";
+            echo "Registro excluido com sucesso!";
         }
 
         public function selecionar($ID) {
@@ -61,7 +58,7 @@
 
             mysqli_set_charset($con,'utf8');
 
-            $consulta = "SELECT * FROM Regra WHERE ID = $ID";
+            $consulta = "SELECT * FROM Cenario WHERE ID = $ID";
 
             if ($resultado = mysqli_query($con, $consulta)) {
                 while ($linha = mysqli_fetch_assoc($resultado)) {
@@ -79,19 +76,19 @@
                             ?>
                         </select><br>
                         <label for="">Ativo:</label><br>
-                        <input id="editar_ativo" type="checkbox" <?php echo $linha['Ativo'] == 1 ? 'checked' : ''; ?>>
+                        <input id="editar_ativo" type="checkbox" <?php echo ord($linha['Ativo']) ? 'checked' : ''; ?>>
                     <?php
                 }
             }
         }
-
+        
         public function alterar($ID, $Nome, $Descricao, $Ativo, $IDJogo) {
             $conexao = new Conexao();
             $con = $conexao-> conectarBanco();
 
             mysqli_set_charset($con,'utf8');
 
-            $consulta = "UPDATE Regra SET Nome = '$Nome', Descricao = '$Descricao', Ativo = $Ativo, IDJogo = $IDJogo WHERE ID = $ID";
+            $consulta = "UPDATE Cenario SET Nome = '$Nome', Descricao = '$Descricao', Ativo = $Ativo, IDJogo = $IDJogo WHERE ID = $ID";
             $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar alterar dados!");
 
             echo "Dados alterados com sucesso!";
@@ -119,7 +116,6 @@
                 }
             }
         }
-        
 
         public function obter_nome_jogo($ID) {
             $conexao = new Conexao();

@@ -1,25 +1,23 @@
 <?php 
   include "cabecalho.php";
-  include "personagem.php";
+  include "cenario.php";
 ?>
 <main role="main" class="container">
   <div class="container my-5">
     <div class="bg-white p-5 rounded">
       <div>
-        <h1>Personagens</h1>
+        <h1>Cenarios</h1>
         <div id="inclusao">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
       </div>
-      <table class="table" border="0" width="100%" align-items="center" margin="auto">
+      <table class="table" border="0" width="100%" align-regras="center" margin="auto">
         <thead class="thead-dark">
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Nome</th>
             <th scope="col">Descrição</th>
-            <th scope="col">Imagem</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Facção</th>
+            <th scope="col">Jogo</th>
             <th scope="col">Ativo</th>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -27,8 +25,8 @@
         </thead>
         <tbody>
           <?php
-            $personagem = new Personagem();
-            $listar = $personagem -> listar();
+            $cenario = new Cenario();
+            $listar = $cenario -> listar();
           ?>
         </tbody>
       </table>
@@ -46,17 +44,13 @@
         <input id="inserir_nome" type="text"><br>
         <label for="">Descrição:</label><br>
         <input id="inserir_descricao" type="text"><br>
-        <label for="">Imagem:</label><br>
-        <input id="inserir_imagem" type="text"><br>
-        <label for="">Tipo:</label><br>
-        <select id="inserir_tipo">
-          <option value="" selected disabled>-</option>  
-          <option>Padrão</option>
-          <option>Companheiro</option>
-          <option>Usuário</option>
+        <label for="">Jogo:</label><br>
+        <select id="inserir_id_jogo">
+          <option value="" selected disabled>-</option>
+          <?php
+            $opcoes = $cenario -> listar_opcoes_jogo(null);
+          ?>
         </select><br>
-        <label for="">Facção:</label><br>
-        <input id="inserir_faccao" type="text"><br>
         <label for="">Ativo:</label><br>
         <input id="inserir_ativo" type="checkbox" checked><br>
       </div>
@@ -80,7 +74,7 @@
     </div>
   </div>
 </div>
-<script src="js/personagem-controller.js"></script>
+<script src="js/cenario-controller.js"></script>
 <?php 
   include "rodape.php";
 ?>
