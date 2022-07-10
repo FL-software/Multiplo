@@ -6,7 +6,7 @@
   <div class="container my-5">
     <div class="bg-white p-5 rounded">
       <div>
-        <h1>Itens</h1>
+        <h1>Menus</h1>
         <div id="inclusao">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
