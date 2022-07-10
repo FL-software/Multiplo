@@ -9,9 +9,10 @@
     <title>Múltiplo</title>
     <link href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/" rel="canonical">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cabecalho.css" rel="stylesheet">
   </head>
   <body class="bg-light">
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark menu">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Múltiplo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark">
