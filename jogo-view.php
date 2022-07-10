@@ -12,20 +12,23 @@
         </div>
       </div>
       <table class="table" border="0" width="100%" align-items="center" margin="auto">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Descrição</th>
-          <th scope="col">Ativo</th>
-          <th scope="col"></th>
-          <th scope="col"></th>
-        <tr>
-      </thead>
-      <?php
-        $jogo = new Jogo();
-        $listar = $jogo -> listar();
-      ?>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Ativo</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          <tr>
+        </thead>
+        <tbody>
+          <?php
+            $jogo = new Jogo();
+            $listar = $jogo -> listar();
+          ?>
+        </tbody>
+      </table>
     </div>
   </div>
 </main>

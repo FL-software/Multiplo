@@ -12,20 +12,23 @@
         </div>
       </div>
       <table class="table" border="0" width="100%" align-perfils="center" margin="auto">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Descrição</th>
-          <th scope="col">Ativo</th>
-          <th scope="col"></th>
-          <th scope="col"></th>
-        <tr>
-      </thead>
-      <?php
-        $perfil = new Perfil();
-        $listar = $perfil -> listar();
-      ?>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Ativo</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          <tr>
+        </thead>
+        <tbody>
+          <?php
+            $perfil = new Perfil();
+            $listar = $perfil -> listar();
+          ?>
+        </tbody>
+      </table>
     </div>
   </div>
 </main>
