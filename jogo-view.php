@@ -63,6 +63,7 @@
     </div>
   </div>
 </div>
+<script src="js/jogo-controller.js"></script>
 <?php 
   include "rodape.php";
 ?>
