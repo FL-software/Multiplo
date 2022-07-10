@@ -48,6 +48,9 @@
                   <li>
                     <a class="dropdown-item" href="personagem-view.php">Personagem</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="regra-view.php">Regras</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
