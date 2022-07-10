@@ -7,5 +7,8 @@
         <script src="js/jquery-3.6.0.js"></script>
         <script src="js/item-controller.js"></script>
         <script src="js/jogo-controller.js"></script>
+        <script src="js/magia-controller.js"></script>
+        <script src="js/menu-controller.js"></script>
+        <script src="js/perfil-controller.js"></script>
     </body>
 </html>
