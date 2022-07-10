@@ -1,12 +1,12 @@
 <?php 
   include "cabecalho.php";
-  include "jogo.php";
+  include "item.php";
 ?>
 <main role="main" class="container">
   <div class="container my-5">
     <div class="bg-white p-5 rounded">
       <div>
-        <h1>Jogos</h1>
+        <h1>Itens</h1>
         <div id="inclusao">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
@@ -23,8 +23,8 @@
         <tr>
       </thead>
       <?php
-        $jogo = new Jogo();
-        $listar = $jogo -> listar();
+        $item = new Item();
+        $listar = $item -> listar();
       ?>
     </div>
   </div>

@@ -1,17 +1,17 @@
 <?php 
   include "cabecalho.php";
-  include "jogo.php";
+  include "magia.php";
 ?>
 <main role="main" class="container">
   <div class="container my-5">
     <div class="bg-white p-5 rounded">
       <div>
-        <h1>Jogos</h1>
+        <h1>Itens</h1>
         <div id="inclusao">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
       </div>
-      <table class="table" border="0" width="100%" align-items="center" margin="auto">
+      <table class="table" border="0" width="100%" align-magias="center" margin="auto">
       <thead class="thead-dark">
         <tr>
           <th scope="col">ID</th>
@@ -23,8 +23,8 @@
         <tr>
       </thead>
       <?php
-        $jogo = new Jogo();
-        $listar = $jogo -> listar();
+        $magia = new Magia();
+        $listar = $magia -> listar();
       ?>
     </div>
   </div>

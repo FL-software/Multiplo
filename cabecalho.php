@@ -27,14 +27,23 @@
               <li class="nav-item">
                 <a class="nav-link active" href="index.php">Início</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
               <li class="nav-item dropdown">
                 <a id="offcanvasNavbarDarkDropdown" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Cadastros</a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="jogo-view.php">Jogo</a>
+                    <a class="dropdown-item" href="item-view.php">Itens</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="jogo-view.php">Jogos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="magia-view.php">Magias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="menu-view.php">Menus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="perfil-view.php">Perfis</a>
                   </li>
                 </ul>
               </li>

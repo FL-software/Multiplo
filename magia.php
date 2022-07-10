@@ -1,14 +1,14 @@
 <?php
     include "conexao.php";
 
-    class jogo {   
+    class Magia {   
         public function listar() {
             $conexao = new Conexao();
             $con = $conexao -> conectarBanco();
 
             mysqli_set_charset($con,'utf8');
     
-            $consulta = "SELECT * FROM Jogo order by ID";       
+            $consulta = "SELECT * FROM Magia order by ID";       
             $resultado = mysqli_query($con,$consulta) or die ("Falha na execução da consulta!");
             
             while($linha = mysqli_fetch_assoc($resultado))
@@ -35,7 +35,7 @@
 
             mysqli_set_charset($con,'utf8');
         
-            $consulta = "INSERT INTO Jogo (Nome, Descricao, Ativo) VALUES ('$Nome', '$Descricao', $Ativo)";
+            $consulta = "INSERT INTO Magia (Nome, Descricao, Ativo) VALUES ('$Nome', '$Descricao', $Ativo)";
             $resultado = mysqli_query($con, $consulta) or die ("Falha ao tentar adicionar dados!");
             
             echo "Dados adicionados com sucesso!";
@@ -44,7 +44,7 @@
         public function excluir($ID) {
             $conexao = new Conexao();
             $con = $conexao-> conectarBanco();    
-            $query = "DELETE FROM Jogo WHERE ID = $ID";
+            $query = "DELETE FROM Magia WHERE ID = $ID";
             $resultado = mysqli_query($con, $query) or die('Falha ao tentar excluir registro!');
             
             echo "Registro excluido com sucesso!";		
@@ -56,7 +56,7 @@
 
             mysqli_set_charset($con,'utf8');
 
-            $consulta = "SELECT * FROM Jogo WHERE ID = $ID";
+            $consulta = "SELECT * FROM Magia WHERE ID = $ID";
 
             if ($resultado = mysqli_query($con, $consulta)) {   
                 while ($linha = mysqli_fetch_assoc($resultado)) { 
@@ -76,7 +76,7 @@
 
             mysqli_set_charset($con,'utf8');
 
-            $consulta = "UPDATE jogo SET Nome = '$Nome', Descricao = '$Descricao', Ativo = $Ativo WHERE ID = $ID";            
+            $consulta = "UPDATE Magia SET Nome = '$Nome', Descricao = '$Descricao', Ativo = $Ativo WHERE ID = $ID";            
             $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar alterar dados!");
 
             echo "Dados alterados com sucesso!";	
