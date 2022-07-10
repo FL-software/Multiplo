@@ -34,7 +34,7 @@
                     <a class="dropdown-item" href="cenario-view.php">Cenarios</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="item-view.php">Histórias</a>
+                    <a class="dropdown-item" href="historia-view.php">Histórias</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="item-view.php">Itens</a>
