@@ -30,6 +30,9 @@
               <li class="nav-item dropdown">
                 <a id="offcanvasNavbarDarkDropdown" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Cadastros</a>
                 <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" href="cenario-view.php">Cenarios</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="item-view.php">Itens</a>
                   </li>
@@ -43,13 +46,19 @@
                     <a class="dropdown-item" href="menu-view.php">Menus</a>
                   </li>
                   <li>
+                    <a class="dropdown-item" href="partida-view.php">Partidas</a>
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="perfil-view.php">Perfis</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="personagem-view.php">Personagem</a>
+                    <a class="dropdown-item" href="personagem-view.php">Personagens</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="regra-view.php">Regras</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tabuleiro-view.php">Tabuleiros</a>
                   </li>
                 </ul>
               </li>

@@ -48,7 +48,7 @@
         <select id="inserir_id_jogo">
           <option value="" selected disabled>-</option>
           <?php
-            $opcoes = $regra -> listar_opcoes_jogo();
+            $opcoes = $regra -> listar_opcoes_jogo(null);
           ?>
         </select><br>
         <label for="">Ativo:</label><br>
