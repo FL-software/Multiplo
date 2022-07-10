@@ -49,7 +49,12 @@
         <label for="">Imagem:</label><br>
         <input id="inserir_imagem" type="text"><br>
         <label for="">Tipo:</label><br>
-        <input id="inserir_tipo" type="text"><br>
+        <select id="inserir_tipo">
+        <option value="" selected disabled>-</option>  
+        <option>Padrão</option>
+        <option>Companheiro</option>
+        <option>Usuário</option>
+        </select><br>
         <label for="">Facção:</label><br>
         <input id="inserir_faccao" type="text"><br>
         <label for="">Ativo:</label><br>
