@@ -33,7 +33,7 @@ $(function(){
         let ID = $(this).attr("id");
         let nome = $(this).attr("nome");
 
-        if(confirm("Confirma a desativar '"+nome+"'?")){
+        if(confirm("Confirma desativar '"+nome+"'?")){
             $.ajax({
                 type:"GET",
                 url:"partida-model.php",
