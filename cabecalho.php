@@ -45,6 +45,9 @@
                   <li>
                     <a class="dropdown-item" href="perfil-view.php">Perfis</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="personagem-view.php">Personagem</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
