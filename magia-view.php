@@ -12,20 +12,23 @@
         </div>
       </div>
       <table class="table" border="0" width="100%" align-magias="center" margin="auto">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Descrição</th>
-          <th scope="col">Ativo</th>
-          <th scope="col"></th>
-          <th scope="col"></th>
-        <tr>
-      </thead>
-      <?php
-        $magia = new Magia();
-        $listar = $magia -> listar();
-      ?>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Ativo</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          <tr>
+        </thead>
+        <tbody>
+          <?php
+            $magia = new Magia();
+            $listar = $magia -> listar();
+          ?>
+        </tbody>
+      </table>
     </div>
   </div>
 </main>
@@ -63,6 +66,7 @@
     </div>
   </div>
 </div>
+<script src="js/magia-controller.js"></script>
 <?php 
   include "rodape.php";
 ?>
