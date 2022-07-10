@@ -12,23 +12,26 @@
         </div>
       </div>
       <table class="table" border="0" width="100%" align-items="center" margin="auto">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Descrição</th>
-          <th scope="col">Imagem</th>
-          <th scope="col">Tipo</th>
-          <th scope="col">Facção</th>
-          <th scope="col">Ativo</th>
-          <th scope="col"></th>
-          <th scope="col"></th>
-        <tr>
-      </thead>
-      <?php
-        $personagem = new Personagem();
-        $listar = $personagem -> listar();
-      ?>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Imagem</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Facção</th>
+            <th scope="col">Ativo</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          <tr>
+        </thead>
+        <tbody>
+          <?php
+            $personagem = new Personagem();
+            $listar = $personagem -> listar();
+          ?>
+        </tbody>
+      </table>
     </div>
   </div>
 </main>
@@ -44,11 +47,11 @@
         <label for="">Descrição:</label><br>
         <input id="inserir_descricao" type="text"><br>
         <label for="">Imagem:</label><br>
-        <input id="inserir_descricao" type="text"><br>
+        <input id="inserir_imagem" type="text"><br>
         <label for="">Tipo:</label><br>
-        <input id="inserir_descricao" type="text"><br>
+        <input id="inserir_tipo" type="text"><br>
         <label for="">Facção:</label><br>
-        <input id="inserir_descricao" type="text"><br>
+        <input id="inserir_faccao" type="text"><br>
         <label for="">Ativo:</label><br>
         <input id="inserir_ativo" type="checkbox" checked><br>
       </div>
@@ -72,6 +75,7 @@
     </div>
   </div>
 </div>
+<script src="js/personagem-controller.js"></script>
 <?php 
   include "rodape.php";
 ?>

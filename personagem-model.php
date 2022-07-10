@@ -13,7 +13,7 @@
             $tipo = $_POST["tipo"];
             $faccao = $_POST["faccao"];
             $ativo = $_POST["ativo"];                      
-            $inserir = $personagem -> inserir($nome,$descricao,$imagem, $tipo,$faccao,$ativo);
+            $inserir = $personagem -> inserir($nome,$descricao,$imagem,$tipo,$faccao,$ativo);
             break;
         case 'excluir':
             $ID = $_GET["ID"];

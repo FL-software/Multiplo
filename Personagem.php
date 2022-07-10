@@ -41,7 +41,7 @@
 
             mysqli_set_charset($con,'utf8');
         
-            $consulta = "INSERT INTO personagem (Nome, Descricao, Ativo) VALUES ('$Nome', '$Descricao', '$Imagem', '$Tipo', '$Faccao', $Ativo)";
+            $consulta = "INSERT INTO personagem (Nome, Descricao, Imagem, Tipo, Faccao, Ativo) VALUES ('$Nome', '$Descricao', '$Imagem', '$Tipo', '$Faccao', $Ativo)";
             $resultado = mysqli_query($con, $consulta) or die ("Falha ao tentar adicionar dados!");
             
             echo "Dados adicionados com sucesso!";
