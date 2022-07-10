@@ -1,17 +1,17 @@
 <?php 
   include "cabecalho.php";
-  include "regra.php";
+  include "historia.php";
 ?>
 <main role="main" class="container">
   <div class="container my-5">
     <div class="bg-white p-5 rounded">
       <div>
-        <h1>Regras</h1>
+        <h1>Historias</h1>
         <div id="inclusao">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
       </div>
-      <table class="table" border="0" width="100%" align-regras="center" margin="auto">
+      <table class="table" border="0" width="100%" align-historias="center" margin="auto">
         <thead class="thead-dark">
           <tr>
             <th scope="col">ID</th>
@@ -25,8 +25,8 @@
         </thead>
         <tbody>
           <?php
-            $regra = new Regra();
-            $listar = $regra -> listar();
+            $historia = new Historia();
+            $listar = $historia -> listar();
           ?>
         </tbody>
       </table>
@@ -44,11 +44,11 @@
         <input id="inserir_nome" type="text"><br>
         <label for="">Descrição:</label><br>
         <input id="inserir_descricao" type="text"><br>
-        <label for="">Jogo:</label><br>
-        <select id="inserir_id_jogo">
+        <label for="">Cenário:</label><br>
+        <select id="inserir_id_cenario">
           <option value="" selected disabled>-</option>
           <?php
-            $opcoes = $regra -> listar_opcoes_jogo(null);
+            $opcoes = $historia -> listar_opcoes_cenario(null);
           ?>
         </select><br>
         <label for="">Ativo:</label><br>
@@ -74,7 +74,7 @@
     </div>
   </div>
 </div>
-<script src="js/regra-controller.js"></script>
+<script src="js/historia-controller.js"></script>
 <?php 
   include "rodape.php";
 ?>

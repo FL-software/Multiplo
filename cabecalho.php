@@ -31,6 +31,9 @@
                 <a id="offcanvasNavbarDarkDropdown" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Cadastros</a>
                 <ul class="dropdown-menu">
                   <li>
+                    <a class="dropdown-item" href="item-view.php">Histórias</a>
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="item-view.php">Itens</a>
                   </li>
                   <li>
