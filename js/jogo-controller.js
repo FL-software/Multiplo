@@ -15,7 +15,7 @@ $(function(){
 
         $.ajax({
             type:"POST",
-            url:"model_Jogo.php",
+            url:"jogo-model.php",
             data:"acao="+acao+"&nome="+nome+"&descricao="+descricao+"&ativo="+ativo,
             success:function(msg){
                 alert(msg);
@@ -34,7 +34,7 @@ $(function(){
         if(confirm("Confirma a exclusão?")){
             $.ajax({
                 type:"GET",
-                url:"model_Jogo.php",
+                url:"jogo-model.php",
                 data:"acao="+acao+"&ID="+ID,
                 success: function(msg){
                     alert(msg);
@@ -53,7 +53,7 @@ $(function(){
 
         $.ajax({
             type:"GET",
-            url:"model_Jogo.php",
+            url:"jogo-model.php",
             data:"acao="+acao+"&ID="+ID,
             success: function(msg){
                 $("#modal-edicao").modal('show');
@@ -71,7 +71,7 @@ $(function(){
     
         $.ajax({
             type:"POST",
-            url:"model_Jogo.php",
+            url:"jogo-model.php",
             data:"acao="+acao+"&ID="+ID+"&nome="+nome+"&descricao="+descricao+"&ativo="+ativo,
             success: function(msg){
                 alert(msg);			

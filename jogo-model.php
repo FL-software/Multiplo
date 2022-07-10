@@ -1,5 +1,5 @@
 <?php
-    include "Jogo.php";
+    include "jogo.php";
 
     $acao = $_REQUEST["acao"];
     $jogo = new Jogo();

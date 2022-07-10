@@ -1,5 +1,5 @@
 <?php
-    include "Conexao.php";
+    include "conexao.php";
 
     class Jogo {   
         public function listar() {
@@ -35,9 +35,7 @@
 
             mysqli_set_charset($con,'utf8');
         
-            $consulta = "INSERT INTO Jogo (Nome, Descricao, Ativo)
-                         VALUES ('$Nome', '$Descricao', $Ativo)";
-
+            $consulta = "INSERT INTO Jogo (Nome, Descricao, Ativo) VALUES ('$Nome', '$Descricao', $Ativo)";
             $resultado = mysqli_query($con, $consulta) or die ("Falha ao tentar adicionar dados!");
             
             echo "Dados adicionados com sucesso!";
@@ -63,10 +61,10 @@
             if ($resultado = mysqli_query($con, $consulta)) {   
                 while ($linha = mysqli_fetch_assoc($resultado)) { 
                     ?>			   
-                        <p><input type="text" id="editar_ID" disabled value="<?php echo $linha['ID']; ?>"> </p>			
-                        <p><input type="text" id="editar_nome" value="<?php echo $linha['Nome']; ?>"></p>
-                        <p><input type="text" id="editar_descricao" value="<?php echo $linha['Descricao']; ?>"></p> 
-                        <p><input type="checkbox" id="editar_ativo" <?php echo ord($linha['Ativo']) ? 'checked' : ''; ?>></p>
+                        <p><input id="editar_ID" type="text" disabled value="<?php echo $linha['ID']; ?>"> </p>			
+                        <p><input id="editar_nome" type="text" value="<?php echo $linha['Nome']; ?>"></p>
+                        <p><input id="editar_descricao" type="text" value="<?php echo $linha['Descricao']; ?>"></p> 
+                        <p><input id="editar_ativo" type="checkbox" <?php echo ord($linha['Ativo']) ? 'checked' : ''; ?>></p>
                     <?php  	                    
                 }
             }
@@ -78,13 +76,8 @@
 
             mysqli_set_charset($con,'utf8');
 
-            $consulta = "UPDATE jogo
-                        SET Nome = '$Nome',
-                            Descricao = '$Descricao',
-                            Ativo = $Ativo                
-                        WHERE ID = $ID";	
-            
-            $resultado= mysqli_query($con, $consulta) or die("Falha ao tentar alterar dados!");
+            $consulta = "UPDATE jogo SET Nome = '$Nome', Descricao = '$Descricao', Ativo = $Ativo WHERE ID = $ID";            
+            $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar alterar dados!");
 
             echo "Dados alterados com sucesso!";	
         }
