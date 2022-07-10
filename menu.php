@@ -23,8 +23,8 @@
                 echo "<td>$Nome</td>";
                 echo "<td>$Descricao</td>";
                 echo "<td><input type='checkbox' id='Ativo' $Ativo disabled></td>";
-                echo "<td><button class='btn btn-success editar' id='$ID'>Editar</button></td>";
-                echo "<td><button class='btn btn-danger excluir' id='$ID'>Excluir</button></td>";
+                echo "<td><button class='btn btn-success editar' nome='$Nome' id='$ID'>Editar</button></td>";
+                echo "<td><button class='btn btn-danger excluir' nome='$Nome' id='$ID'>Desativar</button></td>";
                 echo "</tr>";
             }
         }

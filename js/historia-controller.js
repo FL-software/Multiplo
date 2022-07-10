@@ -31,8 +31,9 @@ $(function(){
     $(".excluir").click(function(){
         let acao = 'excluir'
         let ID = $(this).attr("id");
+        let nome = $(this).attr("nome");
 
-        if(confirm("Confirma a exclusão?")){
+        if(confirm("Confirma a desativar '"+nome+"'?")){
             $.ajax({
                 type:"GET",
                 url:"historia-model.php",
