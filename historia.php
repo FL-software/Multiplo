@@ -17,7 +17,7 @@
                 $Nome = $linha["Nome"];
                 $Descricao = $linha["Descricao"];
                 $Ativo = ord($linha["Ativo"]) == 1 ? 'checked' : '';
-                $IDCenario = $this -> obter_nome_jogo($linha["IDCenario"]);
+                $IDCenario = $this -> obter_nome_cenario($linha["IDCenario"]);
 
                 echo "<tr>";
                 echo "<td>$ID</td>";
