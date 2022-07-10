@@ -44,10 +44,13 @@
         public function excluir($ID) {
             $conexao = new Conexao();
             $con = $conexao-> conectarBanco();
-            $query = "DELETE FROM Jogo WHERE ID = $ID";
-            $resultado = mysqli_query($con, $query) or die('Falha ao tentar excluir registro!');
 
-            echo "Registro excluido com sucesso!";
+            mysqli_set_charset($con,'utf8');
+
+            $consulta = "UPDATE Jogo SET Ativo = 0 WHERE ID = $ID";
+            $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar desativado o registro!");
+
+            echo "Registro desativado com sucesso!";
         }
 
         public function selecionar($ID) {

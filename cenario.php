@@ -45,11 +45,14 @@
 
         public function excluir($ID) {
             $conexao = new Conexao();
-            $con = $conexao-> conectarBanco();    
-            $query = "DELETE FROM Cenario WHERE ID = $ID";
-            $resultado = mysqli_query($con, $query) or die('Falha ao tentar excluir registro!');
+            $con = $conexao-> conectarBanco();
 
-            echo "Registro excluido com sucesso!";
+            mysqli_set_charset($con,'utf8');
+
+            $consulta = "UPDATE Cenario SET Ativo = 0 WHERE ID = $ID";
+            $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar desativado o registro!");
+
+            echo "Registro desativado com sucesso!";
         }
 
         public function selecionar($ID) {
