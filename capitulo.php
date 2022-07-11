@@ -16,7 +16,7 @@
                 $ID = $linha['ID'];
                 $Titulo = $linha["Titulo"];
                 $Texto = $linha["Texto"];
-                $Ativo = ord($linha["Ativo"]) == 1 ? 'checked' : '';
+                $Ativo = ord($linha["Ativo"]) == 1 || $linha["Ativo"] == 1 ? 'checked' : '';
                 $IDHistoria = $this -> obter_nome_historia($linha["IDHistoria"]);
 
                 echo "<tr>";
@@ -25,8 +25,8 @@
                 echo "<td>$Texto</td>";
                 echo "<td>$IDHistoria</td>";
                 echo "<td><input type='checkbox' id='Ativo' $Ativo disabled></td>";
-                echo "<td><button class='btn btn-success editar' nome='$Titulo' id='$ID'>Editar</button></td>";
-                echo "<td><button class='btn btn-danger excluir' nome='$Titulo' id='$ID'>Desativar</button></td>";
+                echo "<td><button class='btn btn-success editar' titulo='$Titulo' id='$ID'>Editar</button></td>";
+                echo "<td><button class='btn btn-danger excluir' titulo='$Titulo' id='$ID'>Desativar</button></td>";
                 echo "</tr>";
             }
         }
@@ -79,7 +79,7 @@
                             ?>
                         </select><br>
                         <label for="">Ativo:</label><br>
-                        <input id="editar_ativo" type="checkbox" <?php echo ord($linha['Ativo']) == 1 ? 'checked' : ''; ?>>
+                        <input id="editar_ativo" type="checkbox" <?php echo ord($linha['Ativo']) == 1 || $linha["Ativo"] == 1 ? 'checked' : ''; ?>>
                     <?php
                 }
             }
