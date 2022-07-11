@@ -4,7 +4,7 @@
 <main role="main" class="container"> 
   <div class="container">
     <div class="bg-white p-5 rounded">
-      <div class="col-sm-8 py-5 mx-auto">
+      <div class="mx-auto">
         <h1>Sobre</h1><br/>
         <h3>Múltiplo</h3>
         <br/>
