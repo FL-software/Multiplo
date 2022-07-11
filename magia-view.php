@@ -3,7 +3,7 @@
   include "magia.php";
 ?>
 <main role="main" class="container">
-  <div class="container my-5">
+  <div class="container">
     <div class="bg-white p-5 rounded">
       <div class="row">
         <h1 class="col">Magias</h1>

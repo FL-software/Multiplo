@@ -2,7 +2,7 @@
   include "cabecalho.php";
 ?>
 <main role="main" class="container"> 
-  <div class="container my-5">
+  <div class="container">
     <div class="bg-white p-5 rounded">
       <div>
         <h1>Bem vindo ao Múltiplo!</h1>

@@ -18,3 +18,10 @@ main {
     margin-top: 20px;
     margin-right: 13px;
 }
+.container {
+    max-width: 100%;
+}
+
+.container > div {
+    min-height: 85vh;
+}

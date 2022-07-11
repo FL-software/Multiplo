@@ -2,7 +2,7 @@
   include "cabecalho.php";
 ?>
 <main role="main" class="container"> 
-  <div class="container my-5">
+  <div class="container">
     <div class="bg-white p-5 rounded">
       <div class="col-sm-8 py-5 mx-auto">
         <h1>Sobre</h1><br/>
