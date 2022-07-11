@@ -11,7 +11,7 @@
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
       </div>
-      <table class="table" border="0" width="100%" align-magias="center" margin="auto">
+      <table class="table" border="0" width="100%" align-items="center" margin="auto">
         <thead class="thead-dark">
           <tr>
             <th scope="col">ID</th>

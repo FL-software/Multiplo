@@ -1,12 +1,12 @@
 <?php 
   include "cabecalho.php";
-  include "historia.php";
+  include "capitulo.php";
 ?>
 <main role="main" class="container">
   <div class="container my-5">
     <div class="bg-white p-5 rounded">
       <div>
-        <h1>Historias</h1>
+        <h1>Capítulos</h1>
         <div id="inclusao">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
@@ -15,9 +15,9 @@
         <thead class="thead-dark">
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Descrição</th>
-            <th scope="col">Jogo</th>
+            <th scope="col">Título</th>
+            <th scope="col">Texto</th>
+            <th scope="col">História</th>
             <th scope="col">Ativo</th>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -25,8 +25,8 @@
         </thead>
         <tbody>
           <?php
-            $historia = new Historia();
-            $listar = $historia -> listar();
+            $capitulo = new Capitulo();
+            $listar = $capitulo -> listar();
           ?>
         </tbody>
       </table>
@@ -40,15 +40,15 @@
         <h5 id="modal-label" class="modal-title">Cadastrar</h5>
       </div>
       <div class="modal-body">        
-        <label for="">Nome:</label><br>
-        <input id="inserir_nome" type="text"><br>
-        <label for="">Descrição:</label><br>
-        <input id="inserir_descricao" type="text"><br>
+        <label for="">Título:</label><br>
+        <input id="inserir_titulo" type="text"><br>
+        <label for="">Texto:</label><br>
+        <input id="inserir_texto" type="text"><br>
         <label for="">Cenário:</label><br>
-        <select id="inserir_id_cenario">
+        <select id="inserir_id_historia">
           <option value="" selected disabled>-</option>
           <?php
-            $opcoes = $historia -> listar_opcoes_cenario(null);
+            $opcoes = $capitulo -> listar_opcoes_historia(null);
           ?>
         </select><br>
         <label for="">Ativo:</label><br>
@@ -74,7 +74,7 @@
     </div>
   </div>
 </div>
-<script src="js/historia-controller.js"></script>
+<script src="js/capitulo-controller.js"></script>
 <?php 
   include "rodape.php";
 ?>

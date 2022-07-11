@@ -30,7 +30,10 @@
               <li class="nav-item dropdown">
                 <a id="offcanvasNavbarDarkDropdown" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Cadastros</a>
                 <ul class="dropdown-menu">
-                <li>
+                  <li>
+                    <a class="dropdown-item" href="capitulo-view.php">Capítulos</a>
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="cenario-view.php">Cenarios</a>
                   </li>
                   <li>
