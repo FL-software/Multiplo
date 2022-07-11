@@ -8,7 +8,7 @@ main {
     padding-top: 80px; /* Altura do menu */
 }
 
-.editar, .excluir, #incluir {
+.editar, .excluir, #incluir, #alterar, #cancelar {
     float: right;
     width: 100px;
     margin: 5px;
