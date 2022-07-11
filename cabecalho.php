@@ -9,7 +9,7 @@
     <title>Múltiplo</title>
     <link href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/" rel="canonical">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/cabecalho.css" rel="stylesheet">
+    <link href="css/todos.css" rel="stylesheet">
   </head>
   <body class="bg-light">
     <nav class="navbar navbar-dark bg-dark menu">

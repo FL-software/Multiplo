@@ -1,0 +1,20 @@
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+main {
+    padding-top: 80px; /* Altura do menu */
+}
+
+.editar, .excluir, #incluir {
+    float: right;
+    width: 100px;
+    margin: 5px;
+}
+
+#incluir {
+    margin-top: 20px;
+    margin-right: 13px;
+}

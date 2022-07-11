@@ -5,9 +5,9 @@
 <main role="main" class="container">
   <div class="container my-5">
     <div class="bg-white p-5 rounded">
-      <div>
-        <h1>Partidas</h1>
-        <div id="inclusao">
+      <div class="row">
+        <h1 class="col">Partidas</h1>
+        <div id="inclusao" class="col">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
       </div>
@@ -19,7 +19,6 @@
             <th scope="col">Descrição</th>
             <th scope="col">Jogo</th>
             <th scope="col">Ativo</th>
-            <th scope="col"></th>
             <th scope="col"></th>
           <tr>
         </thead>
@@ -55,8 +54,8 @@
         <input id="inserir_ativo" type="checkbox" checked><br>
       </div>
       <div class="modal-footer">
-        <button id="cancelar" type="button" class="btn btn-danger cancelar">Cancelar</button>
         <button id="inserir" type="button" class="btn btn-success">Cadastrar</button>
+        <button id="cancelar" type="button" class="btn btn-danger cancelar">Cancelar</button>
       </div>
     </div>
   </div>
@@ -68,8 +67,8 @@
       <div id="modal-corpo-edicao" class="modal-body">
       </div>
       <div class="modal-footer">
-        <button id="cancelar" type="button" class="btn btn-danger cancelar">Cancelar</button>
         <button id="alterar" type="button" class="btn btn-success">Alterar</button>
+        <button id="cancelar" type="button" class="btn btn-danger cancelar">Cancelar</button>
       </div>
     </div>
   </div>
