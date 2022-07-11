@@ -25,3 +25,7 @@ main {
 .container > div {
     min-height: 85vh;
 }
+
+#offcanvasNavbarDark {
+    max-width: fit-content;
+}

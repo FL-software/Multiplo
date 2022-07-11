@@ -28,11 +28,19 @@
                 <a class="nav-link active" href="index.php">Início</a>
               </li>
               <li class="nav-item dropdown">
-                <a id="offcanvasNavbarDarkDropdown" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Cadastros</a>
+                <a id="controle-de-acesso" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Controle de acesso</a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="capitulo-view.php">Capítulos</a>
+                    <a class="dropdown-item" href="menu-view.php">Menus</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="perfil-view.php">Perfis</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="enredo" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Enredo</a>
+                <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="cenario-view.php">Cenarios</a>
                   </li>
@@ -40,31 +48,43 @@
                     <a class="dropdown-item" href="historia-view.php">Histórias</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="item-view.php">Itens</a>
+                    <a class="dropdown-item" href="capitulo-view.php">Capítulos</a>
                   </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="pre-jogo" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Pré-Jogo</a>
+                <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="jogo-view.php">Jogos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tabuleiro-view.php">Tabuleiros</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="item-view.php">Itens</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="magia-view.php">Magias</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="menu-view.php">Menus</a>
+                    <a class="dropdown-item" href="regra-view.php">Regras</a>
                   </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="pre-jogo" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Jogo</a>
+                <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="partida-view.php">Partidas</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="perfil-view.php">Perfis</a>
-                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="jogador" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Jogador</a>
+                <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="personagem-view.php">Personagens</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="regra-view.php">Regras</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="tabuleiro-view.php">Tabuleiros</a>
                   </li>
                 </ul>
               </li>
