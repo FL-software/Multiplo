@@ -25,8 +25,8 @@
                 echo "<td>$Y</td>";
                 echo "<td>$IDTabuleiro</td>";
                 echo "<td><input type='checkbox' id='Ativo' $Ativo disabled></td>";
-                echo "<td><button class='btn btn-danger excluir' x='$X.",".$Y' id='$ID'>Desativar</button>";
-                echo "<button class='btn btn-success editar' x='$X.",".$Y' id='$ID'>Editar</button></td>";
+                echo "<td><button class='btn btn-danger excluir' nome='$X, $Y' id='$ID'>Desativar</button>";
+                echo "<button class='btn btn-success editar' nome='$X, $Y' id='$ID'>Editar</button></td>";
                 echo "</tr>";
             }
         }
