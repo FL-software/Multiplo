@@ -62,6 +62,9 @@
                     <a class="dropdown-item" href="tabuleiro-view.php">Tabuleiros</a>
                   </li>
                   <li>
+                    <a class="dropdown-item" href="posicao-view.php">Posições</a>
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="item-view.php">Itens</a>
                   </li>
                   <li>
