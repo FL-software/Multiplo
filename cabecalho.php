@@ -36,6 +36,9 @@
                   <li>
                     <a class="dropdown-item" href="perfil-view.php">Perfis</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="usuario-view.php">Usuários</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
