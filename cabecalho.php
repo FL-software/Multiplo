@@ -93,6 +93,9 @@
                   <li>
                     <a class="dropdown-item" href="partida-view.php">Partidas</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="participacao-view.php">Participação</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
