@@ -95,6 +95,9 @@
                   <li>
                     <a class="dropdown-item" href="personagem-view.php">Personagens</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="personagem-usuario-view.php">Personagens do Usuario</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
