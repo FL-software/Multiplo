@@ -74,7 +74,13 @@
                     <a class="dropdown-item" href="item-view.php">Itens</a>
                   </li>
                   <li>
+                    <a class="dropdown-item" href="item-jogo-view.php">Itens disponíveis no Jogo</a>
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="magia-view.php">Magias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="magia-jogo-view.php">Magias disponíveis no Jogo</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="regra-view.php">Regras</a>
