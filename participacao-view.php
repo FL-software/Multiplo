@@ -38,7 +38,7 @@
         <h5 id="modal-label" class="modal-title">Cadastrar</h5>
       </div>
       <div class="modal-body">
-        <label for="">Personagens do Usuario:</label><br>
+        <label for="">Personagens do Usuário:</label><br>
         <select id="inserir_id_personagem_usuario">
           <option value="" selected disabled>-</option>
           <?php

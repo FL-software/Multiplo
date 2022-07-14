@@ -65,7 +65,7 @@
                     <a class="dropdown-item" href="item-view.php">Itens</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="item-jogo-view.php">Itens disponíveis no Jogo</a>
+                    <a class="dropdown-item" href="item-jogo-view.php">Itens Disponíveis no Jogo</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="jogo-view.php">Jogos</a>
@@ -74,7 +74,7 @@
                     <a class="dropdown-item" href="magia-view.php">Magias</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="magia-jogo-view.php">Magias disponíveis no Jogo</a>
+                    <a class="dropdown-item" href="magia-jogo-view.php">Magias Disponíveis no Jogo</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="posicao-view.php">Posições</a>
@@ -100,8 +100,16 @@
                     <a class="dropdown-item" href="participacao-view.php">Participação</a>
                   </li>
                   <li>
+<<<<<<< HEAD
                     <a class="dropdown-item" href="partida-view.php">Partidas</a>
                   </li>                  
+=======
+                    <a class="dropdown-item" href="personagem-posicao-view.php">Posicionamento dos Personagens na Partida</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="aliado-view.php">Aliados</a>
+                  </li>
+>>>>>>> 03b29c98caf66face0a9246d7e1626ca657fc7af
                 </ul>
               </li>
               <li class="nav-item dropdown">

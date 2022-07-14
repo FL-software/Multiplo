@@ -1,30 +1,30 @@
 <?php 
   include "cabecalho.php";
-  include "item-jogo.php";
+  include "personagem-posicao.php";
 ?>
 <main role="main" class="container">
   <div class="container">
     <div class="bg-white p-5 rounded">
       <div class="row">
-        <h1 class="col">Itens Disponíveis no Jogo</h1>
+        <h1 class="col">Posicionamento dos Personagens na Partida</h1>
         <div id="inclusao"  class="col">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
       </div>
-      <table class="table" border="0" width="100%" align-items="center" margin="auto">
+      <table class="table" border="0" width="100%" align-personagem_usuarios="center" margin="auto">
         <thead class="thead-dark">
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Item</th>
-            <th scope="col">Jogo</th>
+            <th scope="col">Personagem do Usuário</th>
+            <th scope="col">Posição</th>
             <th scope="col">Ativo</th>
             <th scope="col"></th>
           <tr>
         </thead>
         <tbody>
           <?php
-            $itemJogo = new ItemJogo();
-            $listar = $itemJogo -> listar();
+            $personagemPosicao = new PersonagemPosicao();
+            $listar = $personagemPosicao -> listar();
           ?>
         </tbody>
       </table>
@@ -38,18 +38,18 @@
         <h5 id="modal-label" class="modal-title">Cadastrar</h5>
       </div>
       <div class="modal-body">
-        <label for="">Item:</label><br>
-        <select id="inserir_id_item">
+        <label for="">Personagens do Usuário:</label><br>
+        <select id="inserir_id_personagem_usuario">
           <option value="" selected disabled>-</option>
           <?php
-            $opcoes = $itemJogo -> listar_opcoes_item(null);
+            $opcoes = $personagemPosicao -> listar_opcoes_personagem_usuario(null);
           ?>
         </select><br>
-        <label for="">Jogo:</label><br>
-        <select id="inserir_id_jogo">
+        <label for="">Posição:</label><br>
+        <select id="inserir_id_posicao">
           <option value="" selected disabled>-</option>
           <?php
-            $opcoes = $itemJogo -> listar_opcoes_jogo(null);
+            $opcoes = $personagemPosicao -> listar_opcoes_posicao(null);
           ?>
         </select><br>
         <label for="">Ativo:</label><br>
@@ -75,7 +75,7 @@
     </div>
   </div>
 </div>
-<script src="js/item-jogo-controller.js"></script>
+<script src="js/personagem-posicao-controller.js"></script>
 <?php 
   include "rodape.php";
 ?>
