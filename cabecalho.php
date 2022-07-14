@@ -30,15 +30,15 @@
               <li class="nav-item dropdown">
                 <a id="controle-de-acesso" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Controle de acesso</a>
                 <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" href="acesso-view.php">Acesso</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="menu-view.php">Menus</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="perfil-view.php">Perfis</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="acesso-view.php">Acesso</a>
-                  </li>
+                  </li>                  
                   <li>
                     <a class="dropdown-item" href="usuario-view.php">Usuários</a>
                   </li>
@@ -47,29 +47,20 @@
               <li class="nav-item dropdown">
                 <a id="enredo" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Enredo</a>
                 <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" href="capitulo-view.php">Capítulos</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="cenario-view.php">Cenarios</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="historia-view.php">Histórias</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="capitulo-view.php">Capítulos</a>
-                  </li>
+                  </li>                  
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a id="pre-jogo" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Pré-Jogo</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="jogo-view.php">Jogos</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="tabuleiro-view.php">Tabuleiros</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="posicao-view.php">Posições</a>
-                  </li>
+                <ul class="dropdown-menu">                                                 
                   <li>
                     <a class="dropdown-item" href="item-view.php">Itens</a>
                   </li>
@@ -77,25 +68,40 @@
                     <a class="dropdown-item" href="item-jogo-view.php">Itens disponíveis no Jogo</a>
                   </li>
                   <li>
+                    <a class="dropdown-item" href="jogo-view.php">Jogos</a>
+                  </li>    
+                  <li>
                     <a class="dropdown-item" href="magia-view.php">Magias</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="magia-jogo-view.php">Magias disponíveis no Jogo</a>
                   </li>
                   <li>
+                    <a class="dropdown-item" href="posicao-view.php">Posições</a>
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="regra-view.php">Regras</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="tabuleiro-view.php">Tabuleiros</a>
+                  </li> 
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a id="pre-jogo" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Jogo</a>
                 <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" href="grimorio-view.php">Grimório</a>
+                  </li>
                   <li>
-                    <a class="dropdown-item" href="partida-view.php">Partidas</a>
+                    <a class="dropdown-item" href="inventario-view.php">Inventário</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="participacao-view.php">Participação</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="partida-view.php">Partidas</a>
+                  </li>                  
                 </ul>
               </li>
               <li class="nav-item dropdown">
