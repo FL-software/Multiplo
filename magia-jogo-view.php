@@ -6,7 +6,7 @@
   <div class="container">
     <div class="bg-white p-5 rounded">
       <div class="row">
-        <h1 class="col">Magias disponíveis no Jogo</h1>
+        <h1 class="col">Magias Disponíveis no Jogo</h1>
         <div id="inclusao"  class="col">
           <input id="incluir" type="button" value="Novo" class="btn btn-primary">
         </div>
