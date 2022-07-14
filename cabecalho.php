@@ -100,16 +100,13 @@
                     <a class="dropdown-item" href="participacao-view.php">Participação</a>
                   </li>
                   <li>
-<<<<<<< HEAD
                     <a class="dropdown-item" href="partida-view.php">Partidas</a>
-                  </li>                  
-=======
+                  </li>
                     <a class="dropdown-item" href="personagem-posicao-view.php">Posicionamento dos Personagens na Partida</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="aliado-view.php">Aliados</a>
                   </li>
->>>>>>> 03b29c98caf66face0a9246d7e1626ca657fc7af
                 </ul>
               </li>
               <li class="nav-item dropdown">
