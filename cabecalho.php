@@ -99,6 +99,9 @@
                   <li>
                     <a class="dropdown-item" href="personagem-posicao-view.php">Posicionamento dos Personagens na Partida</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="aliado-view.php">Aliados</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
