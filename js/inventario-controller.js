@@ -68,7 +68,7 @@ $(function(){
         let ID = $("#editar_ID").val();
         let ativo = $("#editar_ativo").is(":checked") ? 1 : 0;
         let idpersonagemusuario = $("#editar_id_personagem_usuario").val();
-        let idpartida = $("#editar_id_item").val();
+        let iditem = $("#editar_id_item").val();
 
         $.ajax({
             type:"POST",
