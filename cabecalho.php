@@ -38,9 +38,12 @@
                   </li>
                   <li>
                     <a class="dropdown-item" href="perfil-view.php">Perfis</a>
-                  </li>                  
+                  </li>
                   <li>
                     <a class="dropdown-item" href="usuario-view.php">Usuários</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="log-view.php">Logs</a>
                   </li>
                 </ul>
               </li>

@@ -1,5 +1,6 @@
 <?php
     include "conexao.php";
+    include "log.php";
 
     class Usuario {
         public function listar() {
@@ -41,6 +42,10 @@
         
             $consulta = "INSERT INTO Usuario (Nome, Login, Senha, Ativo, IDPerfil) VALUES ('$Nome', '$Login', '$Senha', $Ativo, $IDPerfil)";
             $resultado = mysqli_query($con, $consulta) or die ("Falha ao tentar adicionar dados!");
+        
+            $log = new Log();
+            $data = date("Y-m-d H:i:s");
+            $inserir = $log -> inserir("Inserir", "$consulta", $data, "Usuario", "nova", 1);
 
             echo "Dados adicionados com sucesso!";
         }
@@ -53,6 +58,10 @@
 
             $consulta = "UPDATE Usuario SET Ativo = 0 WHERE ID = $ID";
             $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar desativado o registro!");
+        
+            $log = new Log();
+            $data = date("Y-m-d H:i:s");
+            $inserir = $log -> inserir("Desativar", "$consulta", $data, "Usuario", "$ID", 1);
 
             echo "Registro desativado com sucesso!";
         }
@@ -89,7 +98,7 @@
             }
         }
 
-        public function alterar($ID, $Nome, $Login, $Login, $Ativo, $IDPerfil) {
+        public function alterar($ID, $Nome, $Login, $Senha, $Ativo, $IDPerfil) {
             $conexao = new Conexao();
             $con = $conexao-> conectarBanco();
 
@@ -97,6 +106,9 @@
 
             $consulta = "UPDATE Usuario SET Nome = '$Nome', Login = '$Login', Senha = '$Senha', Ativo = $Ativo, IDPerfil = $IDPerfil WHERE ID = $ID";
             $resultado = mysqli_query($con, $consulta) or die("Falha ao tentar alterar dados!");
+        
+            $log = new Log();
+            $inserir = $log -> inserir("Alterar", "$consulta", $data, "Usuario", "$ID", 1);
 
             echo "Dados alterados com sucesso!";
         }
